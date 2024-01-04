@@ -24,3 +24,6 @@ C:\Users\Jacob Artis\Documents\BakingWebApp\RecipeApp\obj\Debug\net8.0\refint\Re
 C:\Users\Jacob Artis\Documents\BakingWebApp\RecipeApp\obj\Debug\net8.0\RecipeApp.pdb
 C:\Users\Jacob Artis\Documents\BakingWebApp\RecipeApp\obj\Debug\net8.0\RecipeApp.genruntimeconfig.cache
 C:\Users\Jacob Artis\Documents\BakingWebApp\RecipeApp\obj\Debug\net8.0\ref\RecipeApp.dll
+C:\Users\Jacob Artis\Documents\BakingWebApp\RecipeApp\obj\Debug\net8.0\RecipeApp.RazorAssemblyInfo.cache
+C:\Users\Jacob Artis\Documents\BakingWebApp\RecipeApp\obj\Debug\net8.0\RecipeApp.RazorAssemblyInfo.cs
+C:\Users\Jacob Artis\Documents\BakingWebApp\RecipeApp\bin\Debug\net8.0\RecipeApp.staticwebassets.runtime.json
