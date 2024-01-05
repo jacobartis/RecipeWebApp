@@ -1,0 +1,13 @@
+@page
+@model RecipePageModel
+@{
+    ViewData["Title"] = "Recipe page";
+}
+
+
+<body>
+    @if (!string.IsNullOrEmpty(Model.Recipe))
+    {
+    <h1>Current recipe: @Model.Recipe</h1>
+    }
+</body>
