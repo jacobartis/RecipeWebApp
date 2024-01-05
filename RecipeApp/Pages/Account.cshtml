@@ -1,0 +1,19 @@
+@page
+@model AccountModel
+@{
+    ViewData["Title"] = "Login page";
+    Layout = null;
+}
+
+<body>
+    <h1>
+        Account Page!!
+    </h1>
+    @if (!string.IsNullOrEmpty(Model.Account))
+    {
+        <p>Account: @Model.Account</p>
+    }
+    @if (string.IsNullOrEmpty(Model.Account)){
+        <p>No account given :(</p>
+    }
+</body>
