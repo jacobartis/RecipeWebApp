@@ -1,4 +1,5 @@
 @page
+@model SearchResultsModel
 @{
     ViewData["Title"] = "Search results";
 }
@@ -12,4 +13,9 @@
     <h1>
         Welcome to search results!
     </h1>
+    <a asp-area="" asp-page="/Index">To main menu</a>
+    @if (!string.IsNullOrEmpty(Model.SearchInput))
+    {
+    <p>Received data: @Model.SearchInput</p>
+    }
 </body>

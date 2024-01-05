@@ -6,10 +6,10 @@
         <link href="/css/site.css" rel="stylesheet" type="text/css" />
     </head>
     <header>
-        <nav class="nav_bar">
-            <a>Home</a>
-            <a>Test</a>
-        </nav>
+        <form class="search" method="get" asp-page="SearchResults" >
+            <input type="text" class="searchInput" id="searchInput" name="searchInput" placeholder="What do you fancy?">
+            <button type="submit" class="searchButton">Search!</button>
+        </form>
     </header>
     <body>
         @RenderBody()
