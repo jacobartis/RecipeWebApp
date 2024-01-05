@@ -10,6 +10,10 @@
             <input type="text" class="searchInput" id="searchInput" name="searchInput" placeholder="What do you fancy?">
             <button type="submit" class="searchButton">Search!</button>
         </form>
+        <div class="accountInfo">
+            <p class="accountName">No Account</p>
+            <button><a asp-area="" asp-page="Login">Login</a></button>
+        </div>
     </header>
     <body>
         @RenderBody()
