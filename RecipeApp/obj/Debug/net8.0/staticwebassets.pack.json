@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Jacob Artis\\Documents\\BakingWebApp\\RecipeApp\\wwwroot\\css\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Index.css"
+    },
+    {
+      "Id": "C:\\Users\\Jacob Artis\\Documents\\BakingWebApp\\RecipeApp\\wwwroot\\css\\Site.css",
+      "PackagePath": "staticwebassets\\css\\Site.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RecipeApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RecipeApp.props",
+      "PackagePath": "build\\RecipeApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RecipeApp.props",
+      "PackagePath": "buildMultiTargeting\\RecipeApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RecipeApp.props",
+      "PackagePath": "buildTransitive\\RecipeApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
