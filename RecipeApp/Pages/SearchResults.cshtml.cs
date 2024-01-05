@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace RecipeApp.Pages{
     public class SearchResultsModel: PageModel{
-        private readonly ILogger<IndexModel> _logger;
+        private readonly ILogger<SearchResultsModel> _logger;
 
-        public SearchResultsModel(ILogger<IndexModel> logger){
+        public SearchResultsModel(ILogger<SearchResultsModel> logger){
             _logger = logger;
         }
 
