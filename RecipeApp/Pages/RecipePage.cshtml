@@ -6,8 +6,8 @@
 
 
 <body>
-    @if (!string.IsNullOrEmpty(Model.Recipe))
+    @if (!string.IsNullOrEmpty(Model.Recipe.Title))
     {
-    <h1>Current recipe: @Model.Recipe</h1>
+    <h1>Current recipe: @Model.Recipe.Title</h1>
     }
 </body>
