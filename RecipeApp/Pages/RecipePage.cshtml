@@ -6,8 +6,19 @@
 
 
 <body>
-    @if (!string.IsNullOrEmpty(Model.Recipe.Title))
+
+    @if (Model.Recipe != null)
     {
-    <h1>Current recipe: @Model.Recipe.Title</h1>
+        <h1>Current recipe: @Model.Recipe.Title</h1>
+        <div>
+            <h2>Cooking time: @Model.Recipe.CookTimeMins</h2>
+            <h2>Prep time: @Model.Recipe.PrepTimeMins</h2>
+            <h2>Servings: @Model.Recipe.Servings</h2>
+        </div>
+        <ol>
+        @foreach (var instruction in Model.Recipe.Instructions){
+            <li>@instruction</li>
+        }
+        </ol>
     }
 </body>
