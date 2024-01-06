@@ -13,8 +13,8 @@ namespace RecipeApp.Services
             
             if (context.Recipes !=null && !context.Recipes.Any())
             {
-                context.Recipes.Add(new Recipe {Title = "Jam on Toast" });
-                context.Recipes.Add(new Recipe {Title = "Tomato Soup" });
+                context.Recipes.Add(new Recipe {Title = "Jam on Toast", CookTimeMins = 2, PrepTimeMins = 0, Servings= 2, Instructions = ["Toast bread.","Butter toast.", "Spread jam on toast."] });
+                context.Recipes.Add(new Recipe {Title = "Tomato Soup" , CookTimeMins = 5, PrepTimeMins = 1, Servings= 1, Instructions = ["Open soup can.","Microwave soup."] });
                 context.SaveChanges();
             }
             _context = context;
