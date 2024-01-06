@@ -13,12 +13,14 @@
     <h1>
         Welcome to search results!
     </h1>
-    <a asp-area="" asp-page="/Index">To main menu</a>
     @if (!string.IsNullOrEmpty(Model.SearchInput))
     {
     <p>Search input: @Model.SearchInput</p>
     }
     @foreach(var recipe in Model.RecipeList){
-        <h1>@recipe.Title</h1>
+        <a asp-area="" asp-page="RecipePage">@recipe.Title</a>
     }
 </body>
+<footer>
+    <a asp-area="" asp-page="/Index">To main menu</a>
+</footer>
