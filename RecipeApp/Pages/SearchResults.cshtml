@@ -17,9 +17,11 @@
     {
     <p>Search input: @Model.SearchInput</p>
     }
+    <ul>
     @foreach(var recipe in Model.RecipeList){
-        <a asp-area="" asp-page="RecipePage">@recipe.Title</a>
+        <li><a asp-area="" asp-page="RecipePage" asp-route-recipeId=@recipe.Id>@recipe.Title</a></li>
     }
+    </ul>
 </body>
 <footer>
     <a asp-area="" asp-page="/Index">To main menu</a>
