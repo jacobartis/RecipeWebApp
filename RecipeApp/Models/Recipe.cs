@@ -8,7 +8,10 @@ namespace RecipeApp.Models
 
         [Required]
         public string? Title {get; set;}
-        //ToDo: Add more data beyond test title
+        public int Servings {get; set;}
+        public int CookTimeMins {get; set;}
+        public int PrepTimeMins {get; set;}
+        public IList<String>? Instructions {get; set;}
     }
 
 }
