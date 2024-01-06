@@ -14,7 +14,12 @@ namespace RecipeApp.Pages{
 
         public void OnGet(String searchInput){
             SearchInput = searchInput;
-            RecipeList = _service.GetRecipes();
+            if (String.IsNullOrEmpty(SearchInput)){
+                RecipeList = _service.GetRecipes();
+            }
+            else{
+                RecipeList = _service.GetRecipesWithName(searchInput);
+            }
         }
     }
 }
