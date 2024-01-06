@@ -23,10 +23,14 @@ namespace RecipeApp.Services
         //ToDo replace with real method.
         public IList<Recipe> GetRecipes()
         {
-            if (_context.Recipes != null){
-                return _context.Recipes.ToList();
-            }
-            return new List<Recipe>();
+            if (_context.Recipes == null) return new List<Recipe>();
+            return _context.Recipes.ToList();
+        }
+
+        public IList<Recipe> GetRecipesWithName(String name)
+        {
+            if (_context.Recipes == null) return new List<Recipe>();
+            return _context.Recipes.Where(recipe => recipe.Title!=null && recipe.Title.ToLower().Contains(name.ToLower()) ).ToList();
         }
     }
 }
