@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using RecipeApp.Models;
 
 namespace RecipeApp.Data
 {
@@ -7,5 +8,7 @@ namespace RecipeApp.Data
         public RecipeContext(DbContextOptions<RecipeContext> options) : base(options)
         {
         }
+
+        public DbSet<Recipe>? Recipes {get; set;}
     }
 }
