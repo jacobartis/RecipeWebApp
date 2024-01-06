@@ -16,7 +16,7 @@
     <a asp-area="" asp-page="/Index">To main menu</a>
     @if (!string.IsNullOrEmpty(Model.SearchInput))
     {
-    <p>Received data: @Model.SearchInput</p>
+    <p>Search input: @Model.SearchInput</p>
     }
     @foreach(var recipe in Model.RecipeList){
         <h1>@recipe.Title</h1>
